@@ -7,6 +7,7 @@ const router = Router();
 
 router.get('/api/products',(req,res)=>{
 
+        req.session.visited=true;  //setting a value in session to create session 
         //Query Params(?query=val)
         const {query,val} = req.query;
         if(query && val){
