@@ -14,6 +14,7 @@
   "dependencies": {
     "cookie-parser": "^1.4.7",
     "express": "^5.2.1",
+    "express-passport": "^0.1.0",
     "express-session": "^1.19.0",
     "express-validation": "^4.1.1",
     "express-validator": "^7.3.2"

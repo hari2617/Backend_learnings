@@ -3,6 +3,7 @@ import router from "./routes/router.js";
 import { cookie } from "express-validator";
 import cookieParser from "cookie-parser";
 import session from "express-session";
+import passport from "express-passport"
 
 const app=express();
 
