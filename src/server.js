@@ -2,8 +2,8 @@ import express from "express"
 import router from "./routes/router.js";
 import { cookie } from "express-validator";
 import cookieParser from "cookie-parser";
-import session from "express-session";
 import passport from "express-passport"
+import session from "express-session";
 
 const app=express();
 
