@@ -4,6 +4,8 @@ import { cookie } from "express-validator";
 import cookieParser from "cookie-parser";
 import passport from "express-passport"
 import session from "express-session";
+import mongoose from "mongoose";
+
 
 const app=express();
 
@@ -18,6 +20,12 @@ app.use(session({
         maxAge:6000*60
     }
 }))
+
+mongoose.connect("mongodb://localhost/prac")
+.then(()=>console.log("DB connected"))
+.catch((err)=> console.log(`Error: ${err}`))
+
+
 app.use(router)
 
 const PORT=3000;
